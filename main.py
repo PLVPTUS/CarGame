@@ -1,6 +1,7 @@
 import pygame
 from pygame.locals import QUIT, KEYDOWN
 import random
+import time
 
 pygame.font.init()
 my_font = pygame.font.SysFont('Comic Sans MS', 30)
@@ -32,6 +33,9 @@ car2_loc.center = left_lane, height * 0.2
 picture = pygame.image.load("grass.png")
 bg = pygame.transform.scale(picture, (800, 800))
 
+GO = pygame.image.load("GO.png")
+
+
 counter = 0
 carsPassed = 0
 
@@ -56,6 +60,9 @@ while running:
 
     if car1_loc[0] == car2_loc[0] and car2_loc[1] > car1_loc[1] - 250:
         print("GAME OVER")
+        screen.blit(GO, (0,0))
+        pygame.display.update()
+        time.sleep(2)
         break
 
     for event in pygame.event.get():
