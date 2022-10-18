@@ -2,7 +2,7 @@
 A simple car game made with python using pygame
 
 ## Installation
-[Download](https://github.com/Pleptus/CarGame/archive/refs/heads/main.zip)
+[Download](https://github.com/Pleptus/CarGame/archive/refs/heads/main.zip)  
 Extract to a folder  
 run main.py  
 
